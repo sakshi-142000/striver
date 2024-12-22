@@ -25,7 +25,7 @@ vector<vector<int> > findTripletOptimal(vector<int>&arr, int n){
     vector<vector<int> > triplets;
     for(int i=0;i<n;i++){
         //for every time we move i, set j to i+1 and k to the last of array
-        if(i>0 && arr[i]==arr[i-1]) continue; //avoid repeting on the same i, it will give duplicates
+        if(i>0 && arr[i]==arr[i-1]) continue; //avoid repeating on the same i, it will give duplicates
         int j=i+1, k=n-1;
         while(j<k){
             //j and k shouldn't cross each other
